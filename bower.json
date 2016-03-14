@@ -1,0 +1,33 @@
+{
+  "name": "jquery-ajax-inject",
+  "version": "0.1.0",
+  "authors": [
+    "zzzhan <chunzhan.he@gmail.com>"
+  ],
+  "description": "Inject to the success callback for jquery ajax.",
+  "main": [
+    "dist/jquery-ajax-inject.js",
+    "dist/jquery-ajax-inject.min.js"
+  ],
+  "keywords": [
+    "ajax inject",
+    "callback prevent",
+    "ajax",
+    "jquery"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/zzzhan/jquery-ajax-inject",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "index.html",
+    "Gruntfile.js",
+    "package.json"
+  ],
+  "dependencies": {
+	"jquery": "^1.10"
+  }
+}
