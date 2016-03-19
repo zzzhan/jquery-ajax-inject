@@ -1,6 +1,6 @@
 {
   "name": "jquery-ajax-inject",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Inject to the success callback for jquery ajax.",
   "bugs": {
     "url": "https://github.com/zzzhan/jquery-ajax-inject/issues"
