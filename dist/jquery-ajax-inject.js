@@ -25,9 +25,9 @@
 	  var original = settings.success;
 	  settings.success = (function(success) {
 		return function(data, textStatus, xhr) {
-		  var skipInject = this.skipInject||false,
-		  ajaxInject = ($.ajaxInject||defaultInject).bind(this);
-		  if(!!skipInject||(ajaxInject(data,textStatus,xhr)&&typeof success === "function")) {
+		  var skipInject = this.skipInject||false;
+		  //ajaxInject = ($.ajaxInject||defaultInject).bind(this);
+		  if(!!skipInject||(($.ajaxInject||defaultInject).apply(this,arguments)&&typeof success === "function")) {
 		    success(data,textStatus,xhr);
 		  }
 		};
